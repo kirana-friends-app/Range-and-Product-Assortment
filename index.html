@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range and Product Assortment</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            padding-top: 55px;
+        }
+
+        .input-container {
+            width: 40%;
+        }
+
+        .output-container {
+            width: 35%;
+            border-left: 2px solid black;
+            padding-left: 45px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .excel{
+            width: 80%;
+            margin: auto;
+            margin-top: 80px;
+        }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-container">
+            <h2>Input</h2>
+            <br>
+            <span>Store Size in sq.ft.</span>
+            <input type="number" id="storeSize">
+            <br>
+            <button type="button" style="margin-top: 30px;" onclick="submitForm()">Submit</button>
+        </div>
+        <div class="output-container">
+            <h2>Output</h2>
+            <p></p>
+        </div>
+        
+    </div>
+
+    <div>
+        <!-- Excel comes here -->
+        <div id="excel-container" class="excel"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
