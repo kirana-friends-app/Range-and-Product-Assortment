@@ -1,7 +1,7 @@
 function submitForm() {
     const storeSize = document.getElementById("storeSize").value;
 
-    fetch("http://13.51.121.171:5000/calculate", {
+    fetch("https://13.51.121.171:5000/calculate", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
