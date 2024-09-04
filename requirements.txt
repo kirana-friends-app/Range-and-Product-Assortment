@@ -1,0 +1,7 @@
+Flask
+pandas
+scikit-learn
+numpy
+reportlab
+matplotlib
+openpyxl
