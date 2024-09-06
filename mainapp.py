@@ -19,7 +19,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, 
 import boto3
 
 app = Flask(__name__)
-app.secret_key = 'Kirana@1234'
+
 
 UPLOAD_FOLDER = '/home/ubuntu/SalesAnalysisTool/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -32,12 +32,7 @@ S3_REGION = 'ap-south-1'
 # Initialize S3 client
 s3 = boto3.client('s3')
 # Initialize S3 client with explicit credentials
-s3 = boto3.client(
-    's3',
-    aws_access_key_id='AKIAQOJ7FI7XX2HARJQT',
-    aws_secret_access_key='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',
-    region_name=S3_REGION
-)
+
 
 def add_table_to_story(dataframe, title, story, styles):
     story.append(Paragraph(title, styles['Heading2']))
